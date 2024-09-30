@@ -66,12 +66,14 @@
         }
 
         #inicio,
-        #perfil {
+        #perfil,
+        #tutorialgit {
             display: none;
         }
 
         #inicio.active,
-        #perfil.active {
+        #perfil.active,
+        #tutorialgit.active {
             display: block;
         }
 
@@ -97,6 +99,7 @@
             <li><a href="#">Entradas</a>
                 <ul>
                     <li><a href="#perfil" onclick="showSection('perfil')">Perfil</a></li>
+                    <li><a href="#tutorialgit" onclick="showSection('tutorialgit')">Tutorial Git</a></li>
                 </ul>
             </li>
         </ul>
@@ -158,6 +161,366 @@
             Cuando no estoy inmersa en el mundo de la tecnología, disfruto explorando nuevas ideas y aplicaciones que puedan transformar nuestra manera de interactuar con el mundo digital. Mi objetivo es seguir creciendo profesionalmente y contribuir de manera significativa al desarrollo de tecnologías que mejoren nuestras vidas.
             
             ¡Gracias por visitar mi página web y por interesarte en mi trayectoria!</p>
+    </section>
+
+    <section id="tutorialgit">
+
+        <body lang="es-CO" link="#0563c1" vlink="#800000" dir="ltr"><p style="line-height: 108%; margin-bottom: 0.11in">
+            <br/>
+            <br/>
+            
+            </p>
+            <p align="center" style="text-align: center; line-height: 108%; margin-bottom: 0.11in"><font size="4" style="font-size: 16pt"><b>Tutorial
+            Git</b></font></p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+            <br/>
+            
+            </p>
+            <ol>
+                <li><p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt">Inicialmente
+                se requiere la instalación de git, se puedes descargar de su sitio
+                oficial </font><font color="#0563c1"><u><a href="https://git-scm.com/downloads"><font size="3" style="font-size: 12pt">https://git-scm.com/downloads</font></a></u></font><font size="3" style="font-size: 12pt">:</font></p></li>
+            </ol>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><img src="img/Tutorial Git_html_d70435dd.png" name="Imagen 1" align="bottom" width="833" height="577" border="0"/>
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+            <br/>
+            
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt">Una
+            vez descargado el instalador, se procede con la instalación de git,
+            para efectos de este tutorial, se dejan los valores predeterminados
+            en el proceso de instalación:</font></p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><img src="img/Tutorial Git_html_1c9b6f90.png" name="Image2" align="bottom" width="499" height="392" border="0"/>
+            
+                   
+            <img src="img/Tutorial Git_html_d15cd334.png" name="Image3" align="bottom" width="499" height="392" border="0"/>
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+            <br/>
+            
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt">Para
+            validar la instalación de git, se puede abrir la consola “Git
+            Bash” desde el menú de aplicaciones:</font></p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><img src="img/Tutorial Git_html_84d439df.png" name="Image4" align="bottom" width="542" height="367" border="0"/>
+            
+                
+            <img src="img/Tutorial Git_html_4479847a.png" name="Image5" align="bottom" width="581" height="370" border="0"/>
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+            <br/>
+            
+            </p>
+            <ol start="2">
+                <li><p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt">Crear
+                una carpeta donde se quiere crear el repositorio, en este caso se
+                creó el directorio “C:\RepositorioPrueba”: </font>
+                </p></li>
+            </ol>
+            <p style="line-height: 108%; margin-left: 0.5in; margin-bottom: 0.11in">
+            
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><img src="img/Tutorial Git_html_c9345328.png" name="Image6" align="bottom" width="570" height="443" border="0"/>
+            
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+            <br/>
+            
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt">Posteriormente
+            hacer clic derecho en la carpeta, en el menú “Mostrar más
+            opciones”, seleccionar la opción que dice “Open Git Bash here”</font></p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><img src="img/Tutorial Git_html_fd81355c.png" name="Image7" align="bottom" width="649" height="648" border="0"/>
+            <font size="3" style="font-size: 12pt">.</font></p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+            <br/>
+            
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt">Esto
+            con el fin de que nos abra la consola de comandos de git en este
+            directorio:</font></p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><img src="img/Tutorial Git_html_a1b9c102.png" name="Image8" align="bottom" width="581" height="370" border="0"/>
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+            <br/>
+            
+            </p>
+            <ol start="3">
+                <li><p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt">El
+                siguiente paso es inicializar el repositorio, para esto en la
+                consola de comandos de git ingresamos el comando “</font><font size="3" style="font-size: 12pt"><i>git
+                init</i></font><font size="3" style="font-size: 12pt">”. Esto crea
+                una carpeta oculta llamada “.git”, que Git utilizará para
+                rastrear los cambios.</font></p></li>
+            </ol>
+            <p style="line-height: 108%; margin-bottom: 0.11in">
+            
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><img src="img/Tutorial Git_html_fa1eff3b.png" name="Image9" align="bottom" width="581" height="370" border="0"/>
+            
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt">Con
+            este comando, ya tienes un repositorio Git local en tu carpeta y
+            puedes empezar a hacer seguimiento de los cambios en tus archivos.</font></p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><img src="img/Tutorial Git_html_2ddd8d26.png" name="Image10" align="bottom" width="736" height="473" border="0"/>
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+            <br/>
+            
+            </p>
+            <ol start="4">
+                <li><p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt">A
+                continuación, se explicará el concepto de branches:</font></p></li>
+            </ol>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt"><b>¿Qué
+            es una rama (branch) y por qué utilizarla?</b></font></p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt">Una
+            rama es una versión paralela de tu proyecto. Te permite trabajar en
+            nuevas características, correcciones de errores o cualquier
+            modificación sin afectar la rama principal (usualmente llamada </font><font size="3" style="font-size: 12pt"><b>main</b></font><font size="3" style="font-size: 12pt">
+            o </font><font size="3" style="font-size: 12pt"><b>master</b></font><font size="3" style="font-size: 12pt">).</font></p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt">Las
+            ramas se utilizan en los siguientes casos:</font></p>
+            <ul>
+                <li><p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt"><b>Desarrollo
+                de nuevas características:</b></font><font size="3" style="font-size: 12pt">
+                Crear una rama específica para una nueva función permite trabajar
+                en ella sin romper la versión estable.</font></p></li>
+                <li><p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt"><b>Correcciones
+                de errores:</b></font><font size="3" style="font-size: 12pt"> Si
+                encuentras un error, puedes crear una rama para corregirlo sin
+                afectar el desarrollo en la rama principal.</font></p></li>
+                <li><p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt"><b>Colaboración:</b></font><font size="3" style="font-size: 12pt">
+                Múltiples desarrolladores pueden trabajar en diferentes ramas y
+                luego fusionar los cambios al proyecto principal.</font></p></li>
+            </ul>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+            <br/>
+            
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt">Primero
+            se creará un archivo en el repositorio con nombre README.md con
+            cualquier contenido, esto con el fin de crear un archivo inicial en
+            nuestro repositorio:</font></p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><img src="img/Tutorial Git_html_fc7406d1.png" name="Image11" align="bottom" width="736" height="473" border="0"/>
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+            <br/>
+            
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt">Posteriormente
+            en la consola de git se agrega este archivo con el comando “</font><font size="3" style="font-size: 12pt"><i>git
+            add README.md</i></font><font size="3" style="font-size: 12pt">”.
+            El  comando “git add” se utiliza en Git para agregar cambios en
+            tu directorio de trabajo al área de preparación (staging area).
+            Este es un paso crucial en el flujo de trabajo de Git, ya que te
+            permite seleccionar qué cambios deseas incluir en tu próximo
+            commit.</font></p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><img src="img/Tutorial Git_html_6915a959.png" name="Image12" align="bottom" width="581" height="370" border="0"/>
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+            <br/>
+            
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt">A
+            continuación se ejecuta el comando git commit -m “Se agrega el
+            archivo README.md”. El comando “git commit” se utiliza en Git
+            para guardar los cambios en el área de preparación (staging area)
+            en el historial del repositorio. Este comando es fundamental en el
+            flujo de trabajo de Git, ya que crea un &quot;snapshot&quot;
+            (instantánea) de los archivos y cambios que has preparado con git
+            add.</font></p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><img src="img/Tutorial Git_html_dabd7cb0.png" name="Image13" align="bottom" width="581" height="370" border="0"/>
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+            <br/>
+            
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt">Para
+            crear una rama se debe ejecutar el comando git Branch &lt;nombre-rama&gt;,
+            por ejemplo: “</font><font size="3" style="font-size: 12pt"><i>git
+            branch develop</i></font><font size="3" style="font-size: 12pt">”.
+            Este comando simplemente crea la rama, pero no cambia a ella.</font></p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><img src="img/Tutorial Git_html_9fb57e2f.png" name="Image14" align="bottom" width="581" height="370" border="0"/>
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+            <br/>
+            
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt">Se
+            puede constatar la creación de la rama con el comando “git branch
+            -a”, en este podemos apreciar que aún seguimos en la rama master,
+            a pesar de que fue creada la rama develop.</font></p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><img src="img/Tutorial Git_html_2043d758.png" name="Image15" align="bottom" width="581" height="370" border="0"/>
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+            <br/>
+            
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt">Para
+            empezar a trabajar en la nueva rama, debes cambiar a ella usando el
+            comando “git checkout develop”. Ahora estás trabajando en esa
+            rama y cualquier cambio que hagas no afectará la rama principal.</font></p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><img src="img/Tutorial Git_html_bd5475df.png" name="Image16" align="bottom" width="581" height="370" border="0"/>
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+            <br/>
+            
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt">El
+            siguiente paso es modificar el archivo REAME.md con cualquier
+            contenido, por ejemplo:</font></p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><img src="img/Tutorial Git_html_7ecee3ca.png" name="Image17" align="bottom" width="611" height="458" border="0"/>
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+            <br/>
+            
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt">En
+            este momento se puede hace uso del comando “git status” para ver
+            el estado del repositorio. El comando “git status” es una
+            herramienta fundamental en Git que te permite obtener información
+            sobre el estado actual de tu repositorio. Proporciona un resumen
+            claro de los cambios realizados en tu proyecto y su preparación para
+            ser comprometidos.</font></p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><img src="img/Tutorial Git_html_22b8aa80.png" name="Image18" align="bottom" width="581" height="370" border="0"/>
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+            <br/>
+            
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt">Posteriormente
+            se agrega los cambios y se ejecuta el comando commit, de la forma en
+            la que ya se explicó previamente, por ejemplo:</font></p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><img src="img/Tutorial Git_html_86bcc180.png" name="Image19" align="bottom" width="581" height="370" border="0"/>
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+            <br/>
+            
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt">Una
+            vez que se ha terminado el trabajo en una rama develop y se quiere
+            combinar esos cambios en la rama master, se debe usar el comando “git
+            merge”. Para esto hay que asegurarse de estar en la rama principal:</font></p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><img src="img/Tutorial Git_html_7efd0490.png" name="Image20" align="bottom" width="581" height="370" border="0"/>
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+            <br/>
+            
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt">Para
+            fusionar los cambios de develp a la rama master, usa el comando “git
+            merge”, este se utiliza para fusionar el historial de dos ramas,
+            incorporando los cambios de una rama a otra sin perder el historial
+            de commits de ninguna de las dos. El proceso de merge es clave cuando
+            trabajas con varias ramas en paralelo y quieres integrar el trabajo
+            de diferentes líneas de desarrollo:</font></p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><img src="img/Tutorial Git_html_d2ca79e2.png" name="Image21" align="bottom" width="581" height="370" border="0"/>
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+            <br/>
+            
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt">Si
+            los cambios no entran en conflicto, se fusionarán automáticamente.
+            Si hay conflictos, Git te pedirá que los resuelvas antes de
+            completar la fusión. Opcionalmente se puede eliminar la rama
+            develop, para esto se utiliza el comando “git branch -d”, tal y
+            como se puede ver a continuación:</font></p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><img src="img/Tutorial Git_html_a9799ca9.png" name="Image22" align="bottom" width="581" height="370" border="0"/>
+            
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+            <br/>
+            
+            </p>
+            <ol start="5">
+                <li><p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt">El
+                siguiente paso es conectar tu repositorio local a uno remoto de
+                Github, para esto se debe crear un repositorio en github:</font></p></li>
+            </ol>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><img src="img/Tutorial Git_html_2c5f56bc.png" name="Image23" align="bottom" width="791" height="654" border="0"/>
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+            <br/>
+            
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt">Una
+            vez creado el repositorio es importante, obtener la url del
+            repositorio remoto, para el caso de este tutorial, es
+            “https://github.com/carolinagg27/tutorialgit.git”</font></p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><img src="img/Tutorial Git_html_52335e5d.png" name="Image24" align="bottom" width="796" height="487" border="0"/>
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+            <br/>
+            
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt">Usa
+            el siguiente comando “git remote add origin URL_DEL_REPOSITORIO”
+            para agregar el repositorio remoto. Reemplaza URL_DEL_REPOSITORIO con
+            la URL que obtuviste de GitHub: </font>
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><img src="img/Tutorial Git_html_c37fc222.png" name="Image25" align="bottom" width="581" height="370" border="0"/>
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+            <br/>
+            
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt">Para
+            asegurarte de que el repositorio remoto se ha agregado correctamente,
+            puedes usar el siguiente comando: “git remote -v”. Esto mostrará
+            la URL del repositorio remoto que acabas de agregar:</font></p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><img src="img/Tutorial Git_html_f8761af8.png" name="Image26" align="bottom" width="581" height="370" border="0"/>
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+            <br/>
+            
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt">Ahora
+            puedes enviar tus cambios al repositorio remoto en GitHub. Puedes
+            usar el siguiente comando para enviarlo “git push -u origin
+            master”. El comando git push se utiliza en Git para enviar tus
+            commits locales a un repositorio remoto. Es una parte fundamental del
+            flujo de trabajo en Git, especialmente cuando trabajas en
+            colaboración con otros desarrolladores o deseas almacenar tus
+            cambios en un servidor. </font>
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt">Se
+            solicitará realizar una autenticación con GitHub:</font></p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><img src="img/Tutorial Git_html_a5e88ded.png" name="Image27" align="bottom" width="420" height="363" border="0"/>
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+            <br/>
+            
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt">Para
+            este caso se hará inicio de sesión a través del navegador, se debe
+            autorizar la autenticación.</font></p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><img src="img/Tutorial Git_html_126092e9.png" name="Image28" align="bottom" width="623" height="775" border="0"/>
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+            <br/>
+            
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt">Una
+            vez se inicia sesión satisfactoriamente los cambios se enviarán al
+            repositorio remoto:</font></p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><img src="img/Tutorial Git_html_55c12897.png" name="Image29" align="bottom" width="581" height="370" border="0"/>
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+            <br/>
+            
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><font size="3" style="font-size: 12pt">En
+            el repositorio creado en GitHub se puede evidenciar que el cambio fue
+            subido satisfactoriamente, para este caso fue una breve modificación
+            al archivo README.md:</font></p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><img src="img/Tutorial Git_html_1e410483.png" name="Image30" align="bottom" width="1038" height="673" border="0"/>
+            </p>
+            <p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+            <br/>
+
     </section>
 
     <footer>
